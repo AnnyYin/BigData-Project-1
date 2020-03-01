@@ -18,6 +18,8 @@ Take my command line as example:
         $ sudo docker run -e APP_KEY=...your API token... -it docker_hub_image:tag python main.py page_size num_pages output
 
 ### About the python scripts
-bigdata1/src/opcvapi.py is python script to intertact with the OPCV API and manage API response
+>bigdata1/src/opcvapi.py 
+Python script to intertact with the OPCV API and manage API response.
 
-bigdata1/main.py is python script to get the API response based on provided API token [APP_KEY] and parameters [page_size, num_pages, output] and print results to a .json file
+>bigdata1/main.py
+Python script to get the API response based on provided API token [APP_KEY] and parameters [page_size, num_pages, output] and print results to a .json file
