@@ -15,6 +15,6 @@ def call_opcv(YOUR_APP_KEY, page_size, num_pages, output):
 		if output:
 			results.write(json.dumps(page) + '\n')
 		else:
-			pprint.pprint(page)
+			pprint.pprint(page, indent = 4)
 	if output:
 		print(results)
