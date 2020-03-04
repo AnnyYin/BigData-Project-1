@@ -12,6 +12,7 @@ In part 1 work, I built a docker image on my computer and pushed it to docker hu
 2. Create a container and run our script locally. The command line supported should be:
 
         $ docker run -v $(pwd):/app -e APP_KEY=...your_API_token... -t bigdata1:1.0 python main.py --page_size=1000 --num_page=4 --output=results.json
+        
         #--page_size: This command line argument is required. It will ask for how many records to request from the API per call.
         #--num_pages: This command line argument is optional. If not provided, your script should continue requesting data until the entirety of the content has been exhausted. If this argument is provided, continue querying for data num_pages times.
         #--output: This command line argument is optional. If not provided, your script should simply print results to stdout. If provided, your script should write the data to the file (in this case, results.json).
