@@ -1,9 +1,10 @@
-# BigData-Project-1
+# BigData-Project#1
 course project#1 for STA9760 Big Data
+* For this project, we will leverage a python client of the Socrata API to connect to the Open Parking and Camera Violations (OPCV) API, load all the data into an ElasticSearch instance, and visualize / analyze with Kibana.
 
-## Part 1
 
-In part 1 work, I built a docker image on my computer and pushed it to docker hub, and ran the image in my AWS EC2 instance.
+## Part 1 Python Scripting
+In part 1 work, we are developing python scripts that can connect to OPCV API and are able to run within docker, with parameters specified by user through the command line, and give users the option to print results out to a file.
 
 ### How to use this Dockerfile
 1. Build an image from our dockerfile on your computer:
@@ -54,7 +55,7 @@ Python script to get the API response based on provided API token [APP_KEY] and 
         Digest: sha256:34f3051fae61b86d523f238add7c20ec566ffaf235ae1936c4416f528b0f0679
         Status: Downloaded newer image for annyy/bigdata1:1.0
         
-        ubuntu@ip-172-31-30-59:~$ sudo docker run -e APP_KEY=HwTacjThLrV999dHsmrkzTfcx -it annyy/bigdata1:1.0 python main.py --page_size=1000 --num_page=4 --output=results.json
+        ubuntu@ip-172-31-30-59:~$ sudo docker run -e APP_KEY=...your_api_token -it annyy/bigdata1:1.0 python main.py --page_size=1000 --num_page=4 --output=results.json
         <_io.TextIOWrapper name='results.json' mode='w' encoding='UTF-8'>
 
 ***
