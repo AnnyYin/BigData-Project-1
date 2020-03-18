@@ -1,0 +1,9 @@
+requests
+pprint
+scipy
+sklearn
+matplotlib
+numpy
+pandas
+sodapy
+elasticsearch
