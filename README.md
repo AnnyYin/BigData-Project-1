@@ -146,18 +146,22 @@ In this part, we will perform graphic analyais in Kibana based on index defined 
 I made 4 charts to do some analysis on data we loaded from elasticsearch instance:
 
 * Vertical Bar: Average Reduction Amount by County
-![Visualization](https://github.com/AnnyYin/BigData-Project-1/blob/master/Part%203/Average%20Reduction%20Amount%20by%20County.png)
+
+	![Visualization](https://github.com/AnnyYin/BigData-Project-1/blob/master/Part%203/Average%20Reduction%20Amount%20by%20County.png)
 	Average reduction amount of all counties are presented in the bar chart, in descending order of reduction amount of each. There is no significant difference between each county.
 	
 * Line Graph: Fine and Payment Amount changes in 2015-2019
-![Visualization](https://github.com/AnnyYin/BigData-Project-1/blob/master/Part%203/Fine%20and%20Payment%20Amount%20by%20Year.png)
+
+	![Visualization](https://github.com/AnnyYin/BigData-Project-1/blob/master/Part%203/Fine%20and%20Payment%20Amount%20by%20Year.png)
 	See how fine amount and payment amount changes in the past few years in this line chart. 
 	
 * Vertical Bar: Violations by County
-![Visualization](https://github.com/AnnyYin/BigData-Project-1/blob/master/Part%203/Violations%20by%20County.png)
-	To compare number of violations among different conties, obviously Newe York has the highest violation.
+
+	![Visualization](https://github.com/AnnyYin/BigData-Project-1/blob/master/Part%203/Violations%20by%20County.png)
+	To compare number of violations among different conties, obviously New York has the highest violation frequency among the state.
 	
 * Pie Chart: Violations by Type
-![Visualization](https://github.com/AnnyYin/BigData-Project-1/blob/master/Part%203/Violations%20by%20Type.png)
-	What type of violation appears most frequently? According to the pie chart, 
+
+	![Visualization](https://github.com/AnnyYin/BigData-Project-1/blob/master/Part%203/Violations%20by%20Type.png)
+	What type of violation appears most frequently? According to the pie chart, PHTO SCHOOL ZN SPEED VIOLATION, NO PARKING-STREET CLEANING, and NO STANDING-DAY/TIME LIMITS are the top 3 types of violation.
 
