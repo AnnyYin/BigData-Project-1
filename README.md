@@ -123,6 +123,7 @@ Add the option of push_es to original script, using function defined in es.py to
 3. Run our script locally. The command line supported should be:
 
         $ docker-compose run -e APP_KEY=...your_API_token... -v ${PWD}:/app pyth python -m main --page_size=1000 --num_pages=10 --output=results.json --push_es=True 
+	
         # --push_es=True: set the push_es argument to true means to push dataset from api to elasticsearch instance
 4. Query elasticsearch
 
@@ -134,4 +135,29 @@ Add the option of push_es to original script, using function defined in es.py to
 
 ***
 
-## Part 3
+## Part 3 Visualizing and Analysis in Kibana
+In this part, we will perform graphic analyais in Kibana based on index defined in Part 2
+
+### Overview in Discover
+![Discover - Kibana](https://github.com/AnnyYin/BigData-Project-1/blob/master/Part%203/Screenshot%20-%20Discover%20-%20Kibana%20-%20localhost.png)
+> Formatting of issue_date has been done in Part 2/src/bigdata1/es.py
+
+### Visualization Analysis
+I made 4 charts to do some analysis on data we loaded from elasticsearch instance:
+
+* Vertical Bar: Average Reduction Amount by County
+![Visualization](https://github.com/AnnyYin/BigData-Project-1/blob/master/Part%203/Average%20Reduction%20Amount%20by%20County.png)
+	Average reduction amount of all counties are presented in the bar chart, in descending order of reduction amount of each. There is no significant difference between each county.
+	
+* Line Graph: Fine and Payment Amount changes in 2015-2019
+![Visualization](https://github.com/AnnyYin/BigData-Project-1/blob/master/Part%203/Fine%20and%20Payment%20Amount%20by%20Year.png)
+	See how fine amount and payment amount changes in the past few years in this line chart. 
+	
+* Vertical Bar: Violations by County
+![Visualization](https://github.com/AnnyYin/BigData-Project-1/blob/master/Part%203/Violations%20by%20County.png)
+	To compare number of violations among different conties, obviously Newe York has the highest violation.
+	
+* Pie Chart: Violations by Type
+![Visualization](https://github.com/AnnyYin/BigData-Project-1/blob/master/Part%203/Violations%20by%20Type.png)
+	What type of violation appears most frequently? According to the pie chart, 
+
