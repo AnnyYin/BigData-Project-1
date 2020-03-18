@@ -127,7 +127,7 @@ Add the option of push_es to original script, using function defined in es.py to
         # --push_es=True: set the push_es argument to true means to push dataset from api to elasticsearch instance
 4. Query elasticsearch
 
-        $ curl -o output.txt http://localhost:9200/opcv/_search?q=state:NY&size=5
+        $ curl -o output.txt "http://localhost:9200/opcv/_search?q=state:NY&size=5"
         
         # return 5 records where state is NY
         # querying result will be ouput to the file output.txt (my output file is located in Part 2)
